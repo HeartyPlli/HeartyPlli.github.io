@@ -3,92 +3,55 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Heart Cagadas' cozy student portfolio, projects, mini escape room, and recommendations.">
-  <title>ArtheHeart | Heart Cagadas' Portfolio</title>
+  <meta name="description" content="Heart Cagadas' student portfolio and cozy creative corner.">
+  <title>Home | ArtheHeart</title>
   <link rel="icon" href="../Image/Logo.png">
-  <link rel="stylesheet" href="../CSS/cozy_portfolio.css?v=3">
+  <link rel="stylesheet" href="../CSS/cozy_portfolio.css?v=4">
 </head>
-<body>
+<body data-page="home">
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <header class="site-header">
-    <nav class="navbar" aria-label="Main navigation">
-      <a class="brand" href="#home" aria-label="ArtheHeart home"><img src="../Image/Logo.png" alt="" width="64" height="64"><span>ArtheHeart</span></a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links"><span class="sr-only">Open navigation</span><span aria-hidden="true">☰</span></button>
-      <div class="nav-links" id="nav-links">
-        <a href="#home">Home</a><a href="#about">About</a>
-        <div class="dropdown">
-          <button class="dropdown-button" type="button" aria-expanded="false" aria-controls="projects-menu">Projects <span class="dropdown-arrow" aria-hidden="true">▼</span></button>
-          <div class="dropdown-menu" id="projects-menu"><a href="#projects">Web Projects</a><a href="#projects">School Projects</a><a href="#escape-room">JavaScript Activities</a></div>
+  <div id="site-header"></div>
+
+  <main id="main-content" class="page-main home-page">
+    <section class="home-hero" aria-labelledby="home-title">
+      <div class="home-copy">
+        <p class="intro-label">Hi there! I'm</p>
+        <img class="text-ornament ornament-top" src="../Image/01/top.png" alt="">
+        <h1 id="home-title">Heart Quimbo Cagadas</h1>
+        <p class="home-introduction">I'm a Computer Science student at Tangub City Global College. I have a deep passion for learning new things, especially anything computer-related. Whenever I'm working on something I love, I'm always ready to give it my all. I'm excited to dive deeper into coding, continue expanding my knowledge, and become a full-stack developer.</p>
+        <div class="home-contact">
+          <span>Contact Info:</span>
+          <div class="social-links" aria-label="Social media links">
+            <a href="https://www.facebook.com/cagadas.heart" target="_blank" rel="noopener noreferrer"><img src="../Image/01/facebook.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/arthe.heart" target="_blank" rel="noopener noreferrer"><img src="../Image/01/insta.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com/@shhhhqc" target="_blank" rel="noopener noreferrer"><img src="../Image/01/tiktok.png" alt="TikTok"></a>
+            <a href="https://x.com/Arthe_HeartQ" target="_blank" rel="noopener noreferrer"><img src="../Image/01/twitter.png" alt="X / Twitter"></a>
+            <a href="https://wa.me/" target="_blank" rel="noopener noreferrer"><img src="../Image/01/whats_app.png" alt="WhatsApp"></a>
+          </div>
         </div>
-        <a href="#skills">Skills</a>
-        <div class="dropdown">
-          <button class="dropdown-button" type="button" aria-expanded="false" aria-controls="cozy-menu">Cozy Corner <span class="dropdown-arrow" aria-hidden="true">▼</span></button>
-          <div class="dropdown-menu" id="cozy-menu"><a href="#escape-room">Mini Escape Room</a><a href="#music">Music</a><a href="#shows">Movies &amp; Series</a></div>
-        </div>
-        <a href="#contact">Contact</a><button class="theme-toggle" type="button" aria-label="Switch to night mode" title="Switch theme">🌙</button>
+        <img class="text-ornament ornament-bottom" src="../Image/01/bottom.png" alt="">
       </div>
-    </nav>
-  </header>
 
-  <main id="main-content">
-    <section class="hero section" id="home" aria-labelledby="hero-title">
-      <div class="hero-copy"><p class="eyebrow">✦ Hello, welcome to my little corner ✦</p><h1 id="hero-title">Hi, I'm <span>Heart Quimbo Cagadas</span></h1><p class="hero-text">I’m a Computer Science student who loves learning, creating, and turning ideas into friendly web experiences. My goal is to become a full-stack developer and make meaningful contributions through technology.</p><div class="hero-actions"><a class="button primary" href="#projects">See my projects</a><a class="button secondary" href="#escape-room">Play my mini game</a></div><p class="cozy-note">☕ Best enjoyed with a warm drink and a curious mind.</p></div>
-      <div class="hero-portrait" aria-label="Portrait area decorated like a cozy study desk"><span class="floating-star star-one" aria-hidden="true">✦</span><span class="floating-star star-two" aria-hidden="true">★</span><img src="../Image/01/me1.png" alt="Heart Cagadas" class="profile-image"><div class="desk-tag">student · creator · dreamer</div></div>
-    </section>
-
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="section-heading"><p class="eyebrow">A little introduction</p><h2 id="about-title">About Me</h2></div>
-      <div class="about-grid">
-        <article class="card about-card"><h3>Learning one project at a time 🌱</h3><p>I’m a Computer Science student at Tangub City Global College. I have a deep passion for learning new things, especially anything computer-related. When I work on something I love, I’m always ready to give it my all.</p><p>I’m excited to keep growing my coding skills and explore both front-end and back-end development.</p><a class="button secondary" href="#contact">Contact me</a></article>
-        <div class="memory-card card"><h3>Photo keepsakes</h3><p>Small moments with myself and my friends.</p><div class="photo-grid">
-          <img src="../Image/me and me/7.jpeg" alt="Heart posing for a photo" loading="lazy"><img src="../Image/me and me/6.jpeg" alt="A personal photo of Heart" loading="lazy"><img src="../Image/me and me/5.jpg" alt="Heart enjoying a memorable moment" loading="lazy"><img src="../Image/me and me/4.jpeg" alt="A portrait of Heart" loading="lazy"><img src="../Image/me and me/3.jpeg" alt="Heart in a casual portrait" loading="lazy"><img src="../Image/me and me/2.jpeg" alt="Another personal memory of Heart" loading="lazy"><img src="../Image/me and me/1.jpeg" alt="A keepsake photo of Heart" loading="lazy"><img src="../Image/friends/77.jpg" alt="Heart spending time with friends" loading="lazy"><img src="../Image/friends/66.jpeg" alt="A happy memory with friends" loading="lazy"><img src="../Image/friends/55.jpeg" alt="Heart and friends together" loading="lazy"><img src="../Image/friends/44.jpeg" alt="A group memory with friends" loading="lazy"><img src="../Image/friends/33.jpeg" alt="Friends posing together" loading="lazy"><img src="../Image/friends/22.JPG" alt="Another photo with friends" loading="lazy"><img src="../Image/friends/11.jpeg" alt="A favorite friendship memory" loading="lazy">
-        </div></div>
+      <div class="portrait-stage" aria-label="Portrait of Heart with purple decorative circles">
+        <span class="portrait-bubble bubble-one"></span><span class="portrait-bubble bubble-two"></span><span class="portrait-bubble bubble-three"></span><span class="portrait-bubble bubble-four"></span><span class="portrait-bubble bubble-five"></span>
+        <img src="../Image/01/me1.png" alt="Heart Cagadas" class="home-portrait">
       </div>
     </section>
 
-    <section class="section tint-section" id="projects" aria-labelledby="projects-title">
-      <div class="section-heading"><p class="eyebrow">Things I’m building</p><h2 id="projects-title">Projects</h2></div>
-      <div class="card-grid project-grid">
-        <button class="project-card card" type="button" data-project="portfolio"><span class="project-icon" aria-hidden="true">🖥️</span><span class="project-category">Web Project</span><strong>ArtheHeart Portfolio</strong><span>A responsive personal space built with HTML, CSS, and Vanilla JavaScript.</span><span class="text-link">View details →</span></button>
-        <button class="project-card card" type="button" data-project="escape-room"><span class="project-icon" aria-hidden="true">🔐</span><span class="project-category">JavaScript Activity</span><strong>Cozy Mini Escape Room</strong><span>A small puzzle game with state, a timer, avatars, and a leaderboard.</span><span class="text-link">View details →</span></button>
-        <button class="project-card card" type="button" data-project="api-corners"><span class="project-icon" aria-hidden="true">🎧</span><span class="project-category">API Activity</span><strong>Cozy Media Corners</strong><span>Search music and series, then share recommendations with visitors.</span><span class="text-link">View details →</span></button>
+    <section class="home-shortcuts" aria-labelledby="explore-title">
+      <div class="ornament-heading"><img src="../Image/01/top.png" alt=""><h2 id="explore-title">Explore My Space</h2></div>
+      <div class="shortcut-grid">
+        <a class="shortcut-card" href="About_Page.html"><span aria-hidden="true">💗</span><strong>About Me</strong><small>My story and photos</small></a>
+        <a class="shortcut-card" href="Projects_Page.html"><span aria-hidden="true">💻</span><strong>Projects</strong><small>Things I have built</small></a>
+        <a class="shortcut-card" href="Skills_Page.html"><span aria-hidden="true">📚</span><strong>Skills</strong><small>My growing toolkit</small></a>
+        <a class="shortcut-card" href="Music_Page.html"><span aria-hidden="true">🎧</span><strong>Music</strong><small>Search new favorites</small></a>
+        <a class="shortcut-card" href="Shows_Page.html"><span aria-hidden="true">📺</span><strong>Series</strong><small>Find something to watch</small></a>
+        <a class="shortcut-card" href="Game_Page.html"><span aria-hidden="true">🎮</span><strong>Mini Game</strong><small>Escape the cozy room</small></a>
       </div>
     </section>
-
-    <section class="section" id="skills" aria-labelledby="skills-title">
-      <div class="section-heading"><p class="eyebrow">My growing toolkit</p><h2 id="skills-title">Skills</h2></div>
-      <div class="skills-grid"><article class="skill-card card"><span aria-hidden="true">🌐</span><h3>HTML</h3><p>Semantic structure, accessible forms, and organized content.</p></article><article class="skill-card card"><span aria-hidden="true">🎨</span><h3>CSS</h3><p>Responsive layouts, custom properties, animation, and cozy visual design.</p></article><article class="skill-card card"><span aria-hidden="true">✨</span><h3>JavaScript</h3><p>DOM events, application state, APIs, local storage, and UI interactions.</p></article><article class="skill-card card"><span aria-hidden="true">🧩</span><h3>Problem Solving</h3><p>Breaking a big idea into understandable, testable steps.</p></article></div>
-    </section>
-
-    <section class="section tint-section cozy-corner" id="cozy-corner" aria-labelledby="cozy-title">
-      <div class="section-heading"><p class="eyebrow">Take a playful break</p><h2 id="cozy-title">Cozy Corner</h2></div>
-      <section class="feature-panel" id="escape-room" aria-labelledby="game-title">
-        <div class="feature-heading"><div><p class="eyebrow">A tiny browser game</p><h3 id="game-title">🔐 Mini Escape Room</h3></div><div class="timer" aria-live="polite">Time: <span id="game-time">00:00</span></div></div>
-        <p>You’re studying in a cozy bedroom when the door clicks shut. Explore the room, solve the gentle puzzles, and unlock the keepsake box to escape.</p>
-        <div class="game-actions"><button class="button primary" id="start-game" type="button">Start Game</button><button class="button secondary" id="restart-game" type="button">Restart Game</button></div>
-        <div class="game-layout"><div class="room" id="game-room" aria-label="Interactive cozy study room"><div class="room-window" aria-hidden="true"><span>☾</span><i></i><i></i><i></i></div><button class="room-object bookshelf" type="button" data-object="bookshelf" disabled><span aria-hidden="true">📚</span><span>Bookshelf</span></button><button class="room-object plant" type="button" data-object="plant" disabled><span aria-hidden="true">🪴</span><span>Plant</span></button><button class="room-object laptop" type="button" data-object="laptop" disabled><span aria-hidden="true">💻</span><span>Laptop</span></button><button class="room-object clock" type="button" data-object="clock" disabled><span aria-hidden="true">🕘</span><span>Clock</span></button><button class="room-object drawer" type="button" data-object="drawer" disabled><span aria-hidden="true">🗄️</span><span>Drawer</span></button><button class="room-object lockbox" type="button" data-object="lockbox" disabled><span aria-hidden="true">🎁</span><span>Locked box</span></button><div class="room-rug" aria-hidden="true">✦　✧　✦</div></div>
-          <aside class="puzzle-panel" aria-live="polite"><h4 id="puzzle-title">The room is waiting</h4><p id="puzzle-message">Press “Start Game” when you’re ready.</p><form id="puzzle-form" class="puzzle-form" hidden><label id="puzzle-label" for="puzzle-answer">Your answer</label><input id="puzzle-answer" name="puzzle-answer" autocomplete="off" maxlength="12"><button class="button primary" type="submit">Try answer</button></form><ul class="clue-list" aria-label="Clues found"><li id="clue-plant">○ Plant clue</li><li id="clue-books">○ Bookshelf puzzle</li><li id="clue-laptop">○ Laptop password</li><li id="clue-drawer">○ Drawer opened</li></ul></aside>
-        </div>
-      </section>
-
-      <section class="feature-panel leaderboard-panel" aria-labelledby="leaderboard-title"><div class="feature-heading"><div><p class="eyebrow" id="leaderboard-mode">Leaderboard status</p><h3 id="leaderboard-title">🏆 Escape Room Leaderboard</h3></div><button class="icon-button" id="refresh-scores" type="button" aria-label="Refresh leaderboard">↻</button></div><p class="status-message" id="leaderboard-status" role="status">Loading scores…</p><div class="table-wrap"><table><thead><tr><th scope="col">Rank</th><th scope="col">Avatar</th><th scope="col">Name</th><th scope="col">Time</th></tr></thead><tbody id="leaderboard-body"></tbody></table></div></section>
-
-      <div class="media-grid">
-        <section class="feature-panel" id="music" aria-labelledby="music-title"><div class="feature-heading"><div><p class="eyebrow">Find a new favorite</p><h3 id="music-title">🎧 Music Corner</h3></div></div><form class="search-form" id="music-search-form"><label for="music-query">Search for an artist or album</label><div><input id="music-query" name="music-query" maxlength="80" required placeholder="e.g. Laufey"><button class="button primary" type="submit">Search</button></div></form><p class="status-message" id="music-status" role="status">Search MusicBrainz for release information.</p><div class="result-grid compact" id="music-results"></div></section>
-        <section class="feature-panel" id="shows" aria-labelledby="shows-title"><div class="feature-heading"><div><p class="eyebrow">For your watch list</p><h3 id="shows-title">📺 Movies &amp; Series Corner</h3></div></div><form class="search-form" id="show-search-form"><label for="show-query">Search for a TV series</label><div><input id="show-query" name="show-query" maxlength="80" required placeholder="e.g. Wednesday"><button class="button primary" type="submit">Search</button></div></form><p class="microcopy">Series search uses TVMaze. Movie search can be added later through a secure backend if its provider requires a private key.</p><p class="status-message" id="show-status" role="status">Search for a series to begin.</p><div class="result-grid compact" id="show-results"></div></section>
-      </div>
-
-      <section class="feature-panel" id="recommendations" aria-labelledby="recommendations-title"><div class="feature-heading"><div><p class="eyebrow" id="recommendations-mode">Recommendation status</p><h3 id="recommendations-title">💌 Visitor Recommendations</h3></div></div><div class="recommendations-layout"><form id="recommendation-form" class="stacked-form"><h4>Recommend Something</h4><label for="visitor-name">Your name</label><input id="visitor-name" name="visitor-name" maxlength="30" required><label for="recommendation-type">Type</label><select id="recommendation-type" name="recommendation-type" required><option value="song">Song</option><option value="movie">Movie</option><option value="series">Series</option></select><label for="recommendation-title">Title</label><input id="recommendation-title" name="recommendation-title" maxlength="100" required><label for="recommendation-creator">Artist / Creator</label><input id="recommendation-creator" name="recommendation-creator" maxlength="100"><label for="recommendation-message">Optional message</label><textarea id="recommendation-message" name="recommendation-message" maxlength="300" rows="4"></textarea><div class="character-count"><span id="message-count">0</span>/300</div><button class="button primary" type="submit">Submit Recommendation</button><p class="status-message" id="recommendation-form-status" role="status"></p></form><div><h4>Latest notes from visitors</h4><p class="status-message" id="recommendations-status" role="status">Loading recommendations…</p><div class="recommendation-feed" id="recommendation-feed"></div></div></div></section>
-    </section>
-
-    <section class="section" id="contact" aria-labelledby="contact-title"><div class="contact-card card"><div><p class="eyebrow">Let’s connect</p><h2 id="contact-title">Contact Me</h2><p>Thanks for visiting my portfolio. You can find me on my social pages below.</p></div><div class="social-links" aria-label="Social media links"><a href="https://www.facebook.com/cagadas.heart" target="_blank" rel="noopener noreferrer"><img src="../Image/01/facebook.png" alt="Facebook"></a><a href="https://www.instagram.com/arthe.heart" target="_blank" rel="noopener noreferrer"><img src="../Image/01/insta.png" alt="Instagram"></a><a href="https://www.tiktok.com/@shhhhqc" target="_blank" rel="noopener noreferrer"><img src="../Image/01/tiktok.png" alt="TikTok"></a><a href="https://x.com/Arthe_HeartQ" target="_blank" rel="noopener noreferrer"><img src="../Image/01/twitter.png" alt="X / Twitter"></a><a href="https://wa.me/" target="_blank" rel="noopener noreferrer"><img src="../Image/01/whats_app.png" alt="WhatsApp"></a></div></div></section>
   </main>
 
-  <footer><img src="../Image/logos/header.png" alt="Tangub City Global College logo"><img src="../Image/logos/ics.png" alt="Institute of Computer Studies logo"><p>© 2026 Heart Cagadas. Made with curiosity, care, and a little stardust.</p></footer>
-
-  <dialog class="modal" id="project-modal" aria-labelledby="project-modal-title"><button class="modal-close" type="button" aria-label="Close project details">×</button><div class="modal-icon" id="project-modal-icon" aria-hidden="true"></div><p class="eyebrow" id="project-modal-category"></p><h2 id="project-modal-title"></h2><p id="project-modal-description"></p><h3>Technologies</h3><p id="project-modal-tech"></p><h3>Features</h3><ul id="project-modal-features"></ul></dialog>
-
-  <dialog class="modal result-modal" id="result-modal" aria-labelledby="result-title"><h2 id="result-title">🎉 You Escaped!</h2><p>Your time: <strong id="final-time">00:00</strong></p><form id="score-form" class="stacked-form"><label for="player-name">Enter your name</label><input id="player-name" name="player-name" maxlength="20" required autocomplete="nickname"><fieldset><legend>Choose your avatar</legend><div class="avatar-grid" id="avatar-options"><button type="button" class="avatar-option selected" data-avatar="cat" aria-pressed="true"><img src="../Image/avatars/cat.svg" alt=""><span>Pixel Cat</span></button><button type="button" class="avatar-option" data-avatar="bunny" aria-pressed="false"><img src="../Image/avatars/bunny.svg" alt=""><span>Pixel Bunny</span></button><button type="button" class="avatar-option" data-avatar="frog" aria-pressed="false"><img src="../Image/avatars/frog.svg" alt=""><span>Pixel Frog</span></button><button type="button" class="avatar-option" data-avatar="bear" aria-pressed="false"><img src="../Image/avatars/bear.svg" alt=""><span>Pixel Bear</span></button><button type="button" class="avatar-option" data-avatar="ghost" aria-pressed="false"><img src="../Image/avatars/ghost.svg" alt=""><span>Pixel Ghost</span></button><button type="button" class="avatar-option" data-avatar="star" aria-pressed="false"><img src="../Image/avatars/star.svg" alt=""><span>Pixel Star</span></button></div></fieldset><p class="status-message" id="score-status" role="status"></p><div class="modal-actions"><button class="button primary" type="submit">Save Score</button><button class="button secondary" id="close-result" type="button">Maybe later</button></div></form></dialog>
+  <div id="site-footer"></div>
   <script type="module" src="../Js/app.js"></script>
 </body>
 </html>
