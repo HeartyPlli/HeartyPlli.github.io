@@ -12,7 +12,7 @@ const socials = [
 const shortcuts = [
   ["/about", "💗", "About Me", "My story and photos"], ["/projects", "💻", "Projects", "Things I have built"],
   ["/skills", "📚", "Skills", "My growing toolkit"], ["/music", "🎧", "Music", "Search new favorites"],
-  ["/shows", "📺", "Series", "Find something to watch"], ["/game", "🎮", "Mini Game", "Escape the cozy room"]
+  ["/shows", "📺", "Series", "Find something to watch"], ["/game", "🎮", "Mini Game", "Catch a snack with bunny"]
 ];
 
 export default function HomePage() {

@@ -10,10 +10,12 @@ import ShowsPage from "./pages/ShowsPage";
 import RecommendationsPage from "./pages/RecommendationsPage";
 import ContactPage from "./pages/ContactPage";
 import NotFoundPage from "./pages/NotFoundPage";
+import BudgetPage from "./pages/BudgetPage";
 
 export default function App() {
   return (
     <Routes>
+      <Route path="budget-tracker" element={<BudgetPage />} />
       <Route element={<Layout />}>
         <Route index element={<HomePage />} />
         <Route path="about" element={<AboutPage />} />

@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { NavLink, Outlet, useLocation } from "react-router-dom";
 import { asset } from "../lib/assets";
 
-const THEME_KEY = "artheheart-theme";
+const THEME_KEY = "artheheart-theme-v2";
 const activeNavClass = ({ isActive }) => isActive ? "active" : "";
 
 export default function Layout() {
@@ -11,7 +11,7 @@ export default function Layout() {
   const [navOpen, setNavOpen] = useState(false);
   const [openMenu, setOpenMenu] = useState(null);
   const [darkMode, setDarkMode] = useState(() => {
-    try { return localStorage.getItem(THEME_KEY) === "dark"; } catch { return false; }
+    try { return localStorage.getItem(THEME_KEY) !== "light"; } catch { return true; }
   });
 
   useEffect(() => {
@@ -67,7 +67,7 @@ export default function Layout() {
             <NavLink className={activeNavClass} to="/skills">Skills</NavLink>
             <div className="dropdown">
               <button className={`dropdown-button${["/game", "/music", "/shows", "/recommendations"].includes(location.pathname) ? " active" : ""}`} type="button" aria-expanded={openMenu === "cozy"} aria-controls="cozy-menu" onClick={() => toggleDropdown("cozy")}>Cozy Corner <span className="dropdown-arrow" aria-hidden="true">▼</span></button>
-              <div className={`dropdown-menu${openMenu === "cozy" ? " show" : ""}`} id="cozy-menu"><NavLink to="/game">Mini Escape Room</NavLink><NavLink to="/music">Music</NavLink><NavLink to="/shows">Movies &amp; Series</NavLink><NavLink to="/recommendations">Recommendations</NavLink></div>
+              <div className={`dropdown-menu${openMenu === "cozy" ? " show" : ""}`} id="cozy-menu"><NavLink to="/game">Bunny Snack Catch</NavLink><NavLink to="/music">Music</NavLink><NavLink to="/shows">Movies &amp; Series</NavLink><NavLink to="/recommendations">Recommendations</NavLink></div>
             </div>
             <NavLink className={activeNavClass} to="/contact">Contact</NavLink>
             <button className="theme-toggle" type="button" aria-label={darkMode ? "Switch to light mode" : "Switch to night mode"} title="Switch theme" onClick={() => setDarkMode((value) => !value)}>{darkMode ? "☀️" : "🌙"}</button>

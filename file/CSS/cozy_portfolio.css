@@ -158,3 +158,78 @@ body.dark-mode .hand-note { color: #f3dfe7; background: #282035; border-color: #
 
 @media (max-width: 400px) { .shortcut-grid, .result-grid { grid-template-columns: 1fr; }.photo-grid { grid-template-columns: repeat(2, 1fr); }.tool-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+/* Ornament-to-heading spacing: increase this gap for more space on both pages. */
+.ornament-heading { --ornament-heading-gap: 0.8rem; display: flex; flex-direction: column; align-items: center; gap: var(--ornament-heading-gap); }
+.ornament-heading h2 { margin: 0; }
+/* Optional independent overrides:
+.home-shortcuts .ornament-heading { --ornament-heading-gap: 1rem; }
+.photo-section .ornament-heading { --ornament-heading-gap: 1rem; }
+*/
+body.dark-mode { color-scheme: dark; }
+.contact-layout { grid-template-columns: minmax(0, 1fr); }
+.contact-message { min-height: 280px; }
+.contact-message > p:not(.hand-note) { max-width: 780px; }
+.budget-project { text-decoration: none; transition: transform .2s; }
+.budget-project:hover { transform: translateY(-4px); }
+.budget-preview { gap: 0; padding: 1rem; color: #923d5b; background: radial-gradient(circle at 80% 15%, #ffbfcc, transparent 70%), #ffe0ed; font-family: Georgia, serif; }
+.budget-preview small { font: 0.85rem "DM Sans", sans-serif; color: #674039; }
+.coming-soon { min-height: 180px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; text-align: center; border-style: dashed; box-shadow: none; }
+.coming-soon p { font-family: "Playfair Display", Georgia, serif; font-size: 1.8rem; margin: 0 0 .4rem; }
+.coming-soon span { color: var(--text-soft); }
+.photo-thumbnail { min-width: 0; padding: 0; background: none; border: 0; border-radius: 8px; cursor: zoom-in; }
+.photo-thumbnail:nth-child(even) img { transform: rotate(2deg); }
+.photo-thumbnail:hover img, .photo-thumbnail:focus-visible img { transform: scale(1.06) rotate(0); }
+.photo-lightbox { position: fixed; inset: 0; width: 100vw; max-width: none; height: 100dvh; max-height: none; margin: 0; padding: 1.5rem; border: 0; color: #fff; background: #0b0b0b; overflow-y: auto; }
+.photo-lightbox[open] { display: flex; flex-direction: column; }
+.photo-lightbox::backdrop { background: #0b0b0b; }
+.lightbox-caption { padding: 0 4rem 0 1rem; }
+.lightbox-caption > span { color: #bfbfbf; font-size: 1rem; }
+.lightbox-caption p { margin: .3rem 0; font-size: 1.25rem; }
+.lightbox-control { flex-shrink: 0; width: 56px; height: 56px; padding: 14px; display: grid; place-items: center; border: 0; border-radius: 50%; background: #292929; cursor: pointer; }
+.lightbox-control:hover { background: #454545; }
+.lightbox-control img { width: 100%; height: 100%; object-fit: contain; }
+.lightbox-close { position: absolute; top: 1.5rem; right: 1.5rem; }
+.lightbox-stage { display: flex; align-items: center; justify-content: center; gap: clamp(1rem, 4vw, 5rem); flex: 1; min-height: 0; margin: 1rem 0; }
+.lightbox-image { display: flex; align-items: center; justify-content: center; width: min(65vw, 900px); height: 100%; min-height: 0; }
+.lightbox-image > img { width: auto; height: auto; max-width: 100%; max-height: calc(100dvh - 180px); border-radius: 18px; object-fit: contain; }
+.lightbox-dots { display: flex; flex-wrap: wrap; justify-content: center; flex-shrink: 0; }
+.lightbox-dots button { width: 30px; height: 32px; padding: 10px; border: 0; background: none; cursor: pointer; }
+.lightbox-dots span { display: block; width: 10px; height: 10px; border-radius: 50%; background: #555; }
+.lightbox-dots button[aria-pressed="true"] span { background: #fff; }
+.snack-panel { max-width: 900px; margin-inline: auto; }
+.snack-heading, .snack-controls, .snack-controls > div { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: .6rem; }
+.snack-heading h2 { margin-bottom: .5rem; }
+.snack-best { color: var(--text-soft); font-size: .9rem; }
+.snack-legend { display: flex; flex-wrap: wrap; gap: .75rem 1.5rem; margin: 1rem 0 1.5rem; }
+.snack-legend > span { display: flex; align-items: center; gap: .5rem; font-size: .9rem; }
+.snack-icon { width: 32px; height: 32px; image-rendering: pixelated; }
+.snack-hud { display: flex; align-items: center; justify-content: space-between; padding: .8rem 1rem; background: #30324e; color: #fff4e7; border: 3px solid #605574; border-bottom: 0; border-radius: 12px 12px 0 0; font-family: monospace; font-size: 1rem; }
+.snack-hearts { color: #ffa2c1; letter-spacing: .15em; font-size: 1.4rem; }
+.snack-hearts span { color: #a7a2c0; }
+.snack-stage { position: relative; border: 3px solid #605574; border-radius: 0 0 12px 12px; overflow: hidden; }
+.snack-stage > canvas { display: block; width: 100%; height: auto; image-rendering: pixelated; touch-action: none; }
+.snack-overlay { position: absolute; inset: 0; display: grid; place-items: center; padding: 1rem; background: #151829b5; }
+.snack-overlay > div { max-width: 360px; padding: 1.5rem; text-align: center; color: #fff4e7; border: 1px solid #7f7194; border-radius: 18px; background: #24253eea; }
+.snack-overlay h3 { color: #fff4e7; font-family: "Playfair Display", Georgia, serif; font-size: clamp(1.25rem, 3vw, 1.8rem); margin: .5rem 0; }
+.snack-overlay .eyebrow { color: #ffc1dc; }
+.snack-overlay p { margin: .5rem 0 1rem; }
+.snack-controls { margin-top: 1rem; }
+.snack-move-controls button { min-width: 96px; min-height: 48px; border: 1px solid var(--border); border-radius: 10px; background: var(--surface-soft); color: var(--text); font-weight: 700; cursor: pointer; touch-action: none; user-select: none; }
+.snack-move-controls button:active { background: var(--primary); color: #fff; }
+@media (max-width: 650px) {
+  .photo-lightbox { padding: 1rem .5rem; }
+  .lightbox-caption { padding-left: .6rem; }
+  .lightbox-caption p { font-size: 1rem; }
+  .lightbox-close { top: 1rem; right: .6rem; }
+  .lightbox-control { width: 44px; height: 44px; padding: 12px; }
+  .lightbox-stage { gap: .25rem; }
+  .lightbox-image { flex: 1; width: auto; }
+  .lightbox-image > img { max-height: calc(100dvh - 210px); border-radius: 8px; }
+  .lightbox-dots button { width: 28px; }
+  .snack-panel { padding: .65rem; }
+  .snack-overlay > div { padding: .8rem; }
+  .snack-overlay p { font-size: .875rem; }
+  .snack-overlay .eyebrow { display: none; }
+  .snack-hud { padding: .5rem; font-size: .85rem; }
+  .snack-controls { justify-content: center; }
+}
